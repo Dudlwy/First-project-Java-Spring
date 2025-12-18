@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Demo Project</title>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-    <body>
-        <h1>Greetings All!!</h1>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'" />
 
-        <p>
-            Hie my name is Dudlwy welcome to my project...
-        </p>
+<p>
+    This is my first project
+</p>
 
-        <img src="/static.images/img1.png" alt="A logo l drew">
-    </body>
+<img src="../static.images/img1.png" width="300" alt="A drawing of mine"/>
+</body>
 </html>
